@@ -16,7 +16,7 @@ echo "Tidying Go modules..."
 
 # Build and run the Go server
 echo "Building and starting the Go server..."
-/usr/local/go/bin/go build -o myapp main.go  # Optional: Build for faster execution
+#/usr/local/go/bin/go build -o myapp main.go  # Optional: Build for faster execution
 /usr/local/go/bin/go run main.go
 
 # Alternatively, if you want to run it directly, use:
