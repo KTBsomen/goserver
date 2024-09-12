@@ -1,6 +1,25 @@
 #!/bin/bash
+
 # Kill any process running on port 8080
-lsof -i:8080 | awk 'NR!=1 {print $2}' | xargs -r kill -9
-/usr/local/go/bin/go mod init hello-world
+echo "Stopping any existing process on port 8080..."
+lsof -t -i:8080 | xargs -r kill -9  # More reliable way to kill the process
+
+
+# Ensure Go mod is initialized and tidy
+if [ ! -f "go.mod" ]; then
+    echo "Initializing Go module..."
+    /usr/local/go/bin/go mod init hello-world
+fi
+
+echo "Tidying Go modules..."
 /usr/local/go/bin/go mod tidy
-/usr/local/go/bin/go run main.go 
+
+# Build and run the Go server
+echo "Building and starting the Go server..."
+/usr/local/go/bin/go build -o myapp main.go  # Optional: Build for faster execution
+/usr/local/go/bin/go run main.go
+
+# Alternatively, if you want to run it directly, use:
+# /usr/local/go/bin/go run main.go
+
+echo "Go server started successfully."
