@@ -1,4 +1,7 @@
 #!/bin/bash
+# Prompt for sudo password
+echo "Enter your sudo password to proceed: "
+read -s SUDO_PASSWORD
 
 # Define Golang version
 GO_VERSION="1.21.1"  # Change this to the version you need
