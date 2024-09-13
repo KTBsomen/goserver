@@ -6,7 +6,7 @@ import (
 )
 
 func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "new changed network change ,webhook,again india!")
+    fmt.Fprintf(w, "next day")
 }
 
 func main() {
