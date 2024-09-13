@@ -6,7 +6,8 @@ import (
 )
 
 func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, " next day new updates in systems cant find files.")
+    fmt.Fprintf(w, " next day new updates in systems cant find files. try again")
+    
 }
 
 func main() {
