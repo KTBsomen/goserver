@@ -3,6 +3,7 @@
 # Kill any process running on port 8080
 echo "Stopping any existing process on port 8080..."
 lsof -t -i:8080 | xargs -r kill -9  # More reliable way to kill the process
+echo "Stopped any existing process on port 8080..."
 
 
 # Ensure Go mod is initialized and tidy
