@@ -8,7 +8,7 @@ GO_VERSION="1.21.1"  # Change this to the version you need
 
 # Check if /usr/local/go exists
 if [ -d "/usr/local/go" ]; then
-    echo "Go is already installed in /usr/local/go. Exiting."
+    echo "Go is already installed in /usr/local/go. Using that instade."
     exit 0
 fi
 
