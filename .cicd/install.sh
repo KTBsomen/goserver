@@ -1,6 +1,6 @@
 #!/bin/bash
 # Prompt for sudo password
-echo "Enter your sudo password to proceed: "
+echo ""
 read -s SUDO_PASSWORD
 
 # Define Golang version
