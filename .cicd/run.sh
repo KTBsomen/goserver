@@ -22,5 +22,5 @@ echo "Building and starting the Go server..."
 
 # Alternatively, if you want to run it directly, use:
 # /usr/local/go/bin/go run main.go
-
+echo "running from run.sh"
 echo "Go server started successfully."
