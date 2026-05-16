@@ -6,7 +6,7 @@ import (
 )
 
 func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, " lets check rcommit message check single check2") 
+    fmt.Fprintf(w, " lets check rcommit message check single check23") 
     
     
 }
