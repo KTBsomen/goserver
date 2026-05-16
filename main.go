@@ -6,7 +6,7 @@ import (
 )
 
 func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, " lets check bhkhkbhkbhkbhk 1") 
+    fmt.Fprintf(w, " lets check new 1") 
     
     
 }
